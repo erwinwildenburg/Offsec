@@ -9,3 +9,6 @@ do
 	printf "$profile\n"
 	dconf write /org/gnome/terminal/legacy/profiles:/${profile}use-transparent-background false
 done
+
+# Install tools to compile Windows exploits
+apt-get install mingw-w64 -y
