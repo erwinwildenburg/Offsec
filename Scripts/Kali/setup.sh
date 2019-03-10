@@ -12,3 +12,9 @@ done
 
 # Install tools to compile Windows exploits
 apt-get install mingw-w64 -y
+
+# Install tools to compile linux binaries for a different architecture
+apt-get install gcc-multilib g++-multilib -y
+
+# Install sshpass for easy ssh login
+apt-get install sshpass -y
